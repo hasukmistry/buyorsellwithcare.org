@@ -1,0 +1,33 @@
+name: Deploy new release to GitHub Pages
+
+on:
+    release:
+        types: [created]  # Trigger the workflow when a release is created
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2  # Checkout the repository's code
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                node-version: '18.12.0'  # Use Node.js version 18.12.0
+
+            - name: Install dependencies
+              run: npm install  # Install npm dependencies
+
+            - name: Bundle Js
+              run: |
+                VERSION=$(git describe --tags --abbrev=0)  # Get latest tag for versioning
+                npm run build -- --output-path=dist/${VERSION}  # Adjust build command and output path
+  
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@4.1.5
+              with:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # GitHub Access Token with repo scope
+                BRANCH: gh-pages  # Branch to deploy to (GitHub Pages branch)
+                FOLDER: dist/${VERSION}  # Deploy from the specific version's build folder
+                CLEAN: true  # Clean up the deploy folder before deploying
