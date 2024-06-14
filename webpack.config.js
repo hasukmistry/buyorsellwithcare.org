@@ -19,7 +19,8 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			'@utils': path.resolve(__dirname, 'src/utils/')
+			'@utils': path.resolve(__dirname, 'src/utils/'),
+			'@config': path.resolve(__dirname, 'src/config/')
 		}
 	}
 };

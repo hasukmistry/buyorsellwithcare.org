@@ -37,6 +37,8 @@ module.exports = {
 
 		// Prefer arrow functions where possible
 		'prefer-arrow-callback': 'error',
+
+		'no-useless-computed-key': 'off',
 	},
 	settings: {
 		"import/resolver": {

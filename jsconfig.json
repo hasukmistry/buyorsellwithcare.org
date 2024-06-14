@@ -3,6 +3,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@utils/*": ["src/utils/*"],
+			"@config/*": ["src/config/*"]
 		}
 	},
 }
