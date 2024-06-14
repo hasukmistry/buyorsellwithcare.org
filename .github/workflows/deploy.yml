@@ -6,6 +6,7 @@ on:
 
 jobs:
     build-and-deploy:
+        environment: production
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
@@ -16,18 +17,25 @@ jobs:
               with:
                 node-version: '18.12.0'  # Use Node.js version 18.12.0
 
+            - name: Set the release tag
+              run: echo "RELEASE_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+
             - name: Install dependencies
               run: npm install  # Install npm dependencies
 
             - name: Bundle Js
               run: |
-                VERSION=$(git describe --tags --abbrev=0)  # Get latest tag for versioning
-                npm run build -- --output-path=dist/${VERSION}  # Adjust build command and output path
-  
+                npm run build
+
+            - name: Prepare deployment files
+              run: |
+                mkdir -p build/${{ env.RELEASE_TAG }}  # Create a folder with release tag
+                cp -r dist/* build/${{ env.RELEASE_TAG }}  # Copy built files to the folder
+
             - name: Deploy to GitHub Pages
-              uses: JamesIves/github-pages-deploy-action@4.1.5
+              uses: peaceiris/actions-gh-pages@v3
               with:
-                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # GitHub Access Token with repo scope
-                BRANCH: gh-pages  # Branch to deploy to (GitHub Pages branch)
-                FOLDER: dist/${VERSION}  # Deploy from the specific version's build folder
-                CLEAN: true  # Clean up the deploy folder before deploying
+                github_token: ${{ secrets.ACCESS_TOKEN }}
+                publish_dir: ./build
+                publish_branch: gh-pages  # Branch to push to
+                commit_message: Built bundle.js:${{ env.RELEASE_TAG }} to GitHub Pages  # Custom commit message
