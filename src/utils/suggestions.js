@@ -1,9 +1,11 @@
 import suggestionsMap from '@config/suggestions-map';
 import zipcodesMap from '@config/zipcodes-map';
 
+const searchBox = '.et_pb_searchform .et_pb_s';
+
 jQuery(($) => {
-    $('.et_pb_searchform .et_pb_s').on('input', () => {
-        const query = $(this).val().toLowerCase();
+    $(searchBox).on('input', () => {
+        const query = $(searchBox).val().toLowerCase();
 
         // bail early if user didn't enter alteast two characters
         if (query.length < 2) {
@@ -57,12 +59,17 @@ jQuery(($) => {
     });
 });
 
+$(document).ready(() => {
+    // turn off default autocomplete
+    $(searchBox).attr('autocomplete', 'off');
+});
+
 $(document).on('click', '.county-group', () => {
-    $('.et_pb_searchform .et_pb_s').val($(this).text());
+    $(searchBox).val($(this).text());
     $('#suggestions-box').hide();
 });
 
 $(document).on('click', '.city-item', () => {
-    $('.et_pb_searchform .et_pb_s').val($(this).text());
+    $(searchBox).val($(this).text());
     $('#suggestions-box').hide();
 });
