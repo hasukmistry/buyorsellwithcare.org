@@ -34,8 +34,5 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "webpack": "^5.92.0",
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "jquery": "^3.7.1"
   }
 }

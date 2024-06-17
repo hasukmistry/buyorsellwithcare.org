@@ -1,14 +1,12 @@
-import jQuery from 'jquery';
-
 (function ($) {
-    $.fn.randomize = function (rowClass) {
+    $.fn.randomize = function (rowClass = 'div.dfc-realtors div.et_pb_row') {
         // Extract items from the DOM
         const items = [];
         const emptyItems = [];
 
         // Loop throw each item and clone it
-        $(this).each(() => {
-            const clone = $(this).clone();
+        $(this).each((index, elem) => {
+            const clone = $(elem).clone();
 
             // Remove last child class, so we can add it later after sorting the list
             clone.removeClass('et-last-child');

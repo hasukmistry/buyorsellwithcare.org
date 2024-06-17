@@ -18,12 +18,6 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
-		new webpack.ProvidePlugin({
-			$: 'jquery',
-			jQuery: 'jquery'
-		})
-	],
 	resolve: {
 		alias: {
 			'@utils': path.resolve(__dirname, 'src/utils/'),
