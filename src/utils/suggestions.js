@@ -64,12 +64,12 @@ $(document).ready(() => {
     $(searchBox).attr('autocomplete', 'off');
 });
 
-$(document).on('click', '.county-group', () => {
-    $(searchBox).val($(this).text());
+$(document).on('click', '.county-group', (event) => {
+    $(searchBox).val(event.target.innerText);
     $('#suggestions-box').hide();
 });
 
-$(document).on('click', '.city-item', () => {
-    $(searchBox).val($(this).text());
+$(document).on('click', '.city-item', (event) => {
+    $(searchBox).val(event.target.innerText);
     $('#suggestions-box').hide();
 });
