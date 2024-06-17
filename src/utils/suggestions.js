@@ -1,7 +1,10 @@
+import jQuery from 'jquery';
 import suggestionsMap from '@config/suggestions-map';
 import zipcodesMap from '@config/zipcodes-map';
 
-jQuery(($) => {
+const $ = jQuery.noConflict();
+
+jQuery(() => {
     $('.et_pb_searchform .et_pb_s').on('input', () => {
         const query = $(this).val().toLowerCase();
 

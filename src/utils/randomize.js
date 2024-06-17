@@ -1,3 +1,5 @@
+import jQuery from 'jquery';
+
 (function ($) {
     $.fn.randomize = function (rowClass) {
         // Extract items from the DOM
