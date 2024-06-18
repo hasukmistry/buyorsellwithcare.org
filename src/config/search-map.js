@@ -1,5 +1,5 @@
 const searchMap = {
-    // county names
+    // all the county names
     'Cache County': 'dfc-cachec',
     'Juab County': 'dfc-juabc',
     'Utah County': 'dfc-utahc',
@@ -9,7 +9,7 @@ const searchMap = {
     'Washington County': 'dfc-washingtonc',
     'Weber County': 'dfc-weberc',
 
-    // city names
+    // all the city names
     'Cache Junction': ['dfc-cj', 'dfc-cachec'],
     Clarkson: ['dfc-clarkston', 'dfc-cachec'],
     Cornish: ['dfc-cornish', 'dfc-cachec'],
@@ -100,7 +100,7 @@ const searchMap = {
     Virgin: ['dfc-virgin', 'dfc-washingtonc'],
     Washington: ['dfc-washington', 'dfc-washingtonc'],
 
-    // zipcodes
+    // all the zipcodes
     84004: ['dfc-alpine', 'dfc-utahc'],
     84003: ['dfc-af', 'dfc-highland', 'dfc-utahc'],
     84006: ['dfc-bc', 'dfc-saltlakec'],
