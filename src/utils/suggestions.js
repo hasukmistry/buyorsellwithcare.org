@@ -57,19 +57,19 @@ jQuery(($) => {
             suggestionsBox.hide();
         }
     });
-});
 
-$(document).ready(() => {
-    // turn off default autocomplete
-    $(searchBox).attr('autocomplete', 'off');
-});
+    $(document).ready(() => {
+        // turn off default autocomplete
+        $(searchBox).attr('autocomplete', 'off');
+    });
 
-$(document).on('click', '.county-group', (event) => {
-    $(searchBox).val(event.target.innerText);
-    $('#suggestions-box').hide();
-});
+    $(document).on('click', '.county-group', (event) => {
+        $(searchBox).val(event.target.innerText);
+        $('#suggestions-box').hide();
+    });
 
-$(document).on('click', '.city-item', (event) => {
-    $(searchBox).val(event.target.innerText);
-    $('#suggestions-box').hide();
+    $(document).on('click', '.city-item', (event) => {
+        $(searchBox).val(event.target.innerText);
+        $('#suggestions-box').hide();
+    });
 });
