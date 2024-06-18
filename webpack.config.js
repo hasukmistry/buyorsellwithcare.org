@@ -32,8 +32,8 @@ module.exports = {
                         unused: false,
                     },
                     // Ensure function and variable names are not mangled
-                    keep_fnames: true,
-                    keep_classnames: true,
+                    keep_fnames: false,
+                    keep_classnames: false,
                 },
             }),
         ],
