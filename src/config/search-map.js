@@ -9,7 +9,7 @@ const searchMap = {
     'Spartanburg County': 'dfc-spartanburgc',
 
     // city names
-    Ballentine: ['dfc-ballentine', 'dfc-richlandc'],    
+    Ballentine: ['dfc-ballentine', 'dfc-richlandc'],
     Blythewood: ['dfc-blythewood', 'dfc-richlandc'],
     Gadsden: ['dfc-gadsden', 'dfc-richlandc'],
     Cayce: ['dfc-cayce', 'dfc-lexingtonc'],
