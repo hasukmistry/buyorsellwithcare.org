@@ -58,7 +58,7 @@ const searchMap = {
     Greenville: ['dfc-greenville', 'dfc-greenvillec'],
     Cleveland: ['dfc-cleveland', 'dfc-greenvillec'],
     Conestee: ['dfc-conestee', 'dfc-greenvillec'],
-    Fountain Inn: ['dfc-fi', 'dfc-greenvillec'],
+    'Fountain Inn': ['dfc-fi', 'dfc-greenvillec'],
     Greer: ['dfc-greer', 'dfc-greenvillec'],
     Marietta: ['dfc-marietta', 'dfc-greenvillec'],
     Mauldin: ['dfc-mauldin', 'dfc-greenvillec'],
