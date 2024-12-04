@@ -85,6 +85,4 @@ const zipcodesMap = {
     ['White Stone']: '29386',
     ['Woodruff']: '29388',
 };
-
 export default zipcodesMap;
-
