@@ -34,7 +34,6 @@ const searchMap = {
     Bethune: ['dfc-bethune', 'dfc-kershawc'],
     Camden: ['dfc-camden', 'dfc-kershawc'],
     Cassatt: ['dfc-cassatt', 'dfc-kershawc'],
-    Bethune: ['dfc-bethune', 'dfc-kershawc'],
     Elgin: ['dfc-elgin', 'dfc-kershawc'],
     'Liberty Hill': ['dfc-lh', 'dfc-kershawc'],
     Lugoff: ['dfc-lugoff', 'dfc-kershawc'],
