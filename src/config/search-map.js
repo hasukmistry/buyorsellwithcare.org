@@ -8,7 +8,6 @@ const searchMap = {
     'Richland County': 'dfc-richlandc',
     'Spartanburg County': 'dfc-spartanburgc',
 
-
     // city names
     Ballentine: ['dfc-ballentine', 'dfc-richlandc'],    
     Blythewood: ['dfc-blythewood', 'dfc-richlandc'],
@@ -101,10 +100,6 @@ const searchMap = {
     Wellford: ['dfc-wellford', 'dfc-spartanburgc'],
     'White Stone': ['dfc-ws', 'dfc-spartanburgc'],
     Woodruff: ['dfc-woodruff', 'dfc-spartanburgc'],
-
-
-
-
 
     // zipcodes
     29002: ['dfc-ballentine', 'dfc-richlandc'],
@@ -243,7 +238,6 @@ const searchMap = {
     29385: ['dfc-wellford', 'dfc-spartanburgc'],
     29386: ['dfc-ws', 'dfc-spartanburgc'],
     29388: ['dfc-woodruff', 'dfc-spartanburgc'],
-
 };
 
 export default searchMap;
