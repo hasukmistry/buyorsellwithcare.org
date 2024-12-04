@@ -81,7 +81,7 @@ const zipcodesMap = {
     ['Veyo']: '84782',
     ['Vineyard']: '84057',
     ['Virgin']: '84779',
-    ['Wallsburg']: '84082',
+    ['Wallsburger']: '84082',
     ['Washington']: '84780',
     ['Wellsville']: '84339',
     ['West Jordan']: '84081, 84084, 84088',
