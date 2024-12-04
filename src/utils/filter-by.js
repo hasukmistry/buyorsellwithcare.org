@@ -36,14 +36,13 @@ import searchMap from '@config/search-map';
                 filterClasses.forEach((filter) => {
                     if (
                         (
-                            filter !== 'dfc-utahc'
-                            && filter !== 'dfc-davisc'
-                            && filter !== 'dfc-saltlakec'
-                            && filter !== 'dfc-weberc'
-                            && filter !== 'dfc-cachec'
-                            && filter !== 'dfc-wasatchc'
-                            && filter !== 'dfc-juabc'
-                            && filter !== 'dfc-washingtonc'
+                            filter !== 'dfc-richlandc'
+                            && filter !== 'dfc-fairfieldc'
+                            && filter !== 'dfc-greenvillec'
+                            && filter !== 'dfc-kershawc'
+                            && filter !== 'dfc-lexingtonc'
+                            && filter !== 'dfc-newberryc'
+                            && filter !== 'dfc-spartanburgc'
                         )
                         && clone.attr('class').includes(filter)
                     ) {
