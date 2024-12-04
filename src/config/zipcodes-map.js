@@ -84,7 +84,6 @@ const zipcodesMap = {
     ['Wellford']: '29385',
     ['White Stone']: '29386',
     ['Woodruff']: '29388',
-
 };
 
 export default zipcodesMap;
