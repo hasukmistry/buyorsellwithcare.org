@@ -18,7 +18,6 @@ const searchMap = {
     'Forest Acres': ['dfc-fa', 'dfc-richlandc'],
     'Arcadia Lakes': ['dfc-al', 'dfc-richlandc'],
     Eastover: ['dfc-eastover', 'dfc-richlandc'],
-    Irmo: ['dfc-irmo', 'dfc-lexingtonc'],
     'West Columbia': ['dfc-wc', 'dfc-lexingtonc'],
     Lexington: ['dfc-lexington', 'dfc-lexingtonc'],
     'Seven Oaks': ['dfc-so', 'dfc-lexingtonc'],
