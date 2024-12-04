@@ -9,4 +9,3 @@ const suggestionsMap = {
 };
 
 export default suggestionsMap;
-
