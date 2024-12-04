@@ -1,12 +1,12 @@
 const suggestionsMap = {
-    ['Cache County']: ['Cache Junction', 'Clarkston', 'Cornish', 'Hyde Park', 'Hyrum', 'Lewiston', 'Logan', 'Mendon', 'Millville', 'Newton', 'Paradise', 'Providence', 'Richmond', 'Smithfield', 'Trenton', 'Wellsville'],
-    ['Juab County']: ['Eureka', 'Levan', 'Mona', 'Nephi'],
-    ['Davis County']: ['Layton', 'Bountiful', 'Centerville', 'Clearfield', 'Farmington', 'Kaysville', 'North Salt Lake', 'Syracuse', 'Woods Cross'],
-    ['Salt Lake County']: ['Draper', 'Riverton', 'West Jordan', 'Herriman', 'Salt Lake City', 'Bingham Canyon', 'South Jordan', 'Magna', 'Midvale', 'Sandy', 'West Valley City'],
-    ['Utah County']: ['Alpine', 'American Fork', 'Elk Ridge', 'Spanish Fork', 'Lehi', 'Springville', 'Saratoga Springs', 'Eagle Mountain', 'Pleasant Grove', 'Woodland Hills', 'Lindon', 'Vineyard', 'Highland', 'Mapleton', 'Salem', 'Payson', 'Provo', 'Orem', 'Santaquin', 'Elberta', 'Goshen', 'Cedar Valley'],
-    ['Wasatch County']: ['Heber City', 'Midway', 'Wallsburger'],
-    ['Washington County']: ['Central', 'Dammeron Valley', 'Enterprise', 'Gunlock', 'Hildale', 'Hurricane', 'Ivins', 'La Verkin', 'Leeds', 'New Harmony', 'Pine Valley', 'Rockville', 'Saint George', 'Santa Clara', 'Springdale', 'Toquerville', 'Veyo', 'Virgin', 'Washington'],
-    ['Weber County']: ['Eden', 'Hooper', 'Huntsville', 'Ogden', 'Roy'],
+    ['Fairfield County']: ['Winnsboro', 'Winnsboro Mills'],
+    ['Greenville County']: ['Greenville', 'Greer', 'Mauldin', 'Simppsonville', 'Taylors', 'Wade Hampton', 'Five Forks', 'Gantt', 'Fountain Inn', 'Parker', 'Travelers Rest'],
+    ['Kershaw County']: ['Lugoff', 'Camden', 'East Camden', 'Elgin'],
+    ['Lexington County']: ['Cayce', 'West Columbia', 'Chapin', 'Lexington', 'Batesburg-Leesville', 'Gaston', 'Gilbert', 'Columbia', 'Seven Oaks', 'St. Andrews', 'Red Bank', 'White Knoll'],
+    ['Newberry County']: ['Newberry', 'Whitmire', 'Prosperity'],
+    ['Richland County']: ['Columbia', 'Blythewood', 'Arcadia Lakes', 'Eastover', 'Forest Acres', 'Dentsville', 'Woodfield', 'Irmo'],
+    ['Spartanburg County']: ['Spartanburg', 'Boiling Springs', 'Valley Falls', 'Lyman', 'Woodruff', 'Duncan', 'Whitney', 'Saxon', 'Roebuck', 'White Stone', 'Wellford'],
 };
 
 export default suggestionsMap;
+
