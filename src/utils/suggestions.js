@@ -34,7 +34,10 @@ jQuery(($) => {
                     // look for current city zipcodes
                     const zipcodes = zipcodesMap[city];
 
-                    if (city.toLowerCase().includes(query) || zipcodes.includes(query)) {
+                    if (
+                        (typeof city === 'string' && city.toLowerCase().includes(query))
+                        || (Array.isArray(zipcodes) && zipcodes.includes(query))
+                    ) {
                         if (!cityFound) {
                             // Ensure county name is added only once
                             countyGroupContainer.append(countyGroup);
