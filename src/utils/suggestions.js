@@ -37,6 +37,7 @@ jQuery(($) => {
                     if (
                         (typeof city === 'string' && city.toLowerCase().includes(query))
                         || (Array.isArray(zipcodes) && zipcodes.includes(query))
+                        || (typeof zipcodes === 'string' && zipcodes.includes(query))
                     ) {
                         if (!cityFound) {
                             // Ensure county name is added only once
