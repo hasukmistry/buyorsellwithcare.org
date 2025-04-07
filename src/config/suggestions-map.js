@@ -4,7 +4,7 @@ const suggestionsMap = {
     ['Kershaw County']: ['Lugoff', 'Camden', 'East Camden', 'Elgin'],
     ['Lexington County']: ['Cayce', 'West Columbia', 'Chapin', 'Lexington', 'Batesburg-Leesville', 'Gaston', 'Gilbert', 'Columbia', 'Seven Oaks', 'St. Andrews', 'Red Bank', 'White Knoll'],
     ['Newberry County']: ['Newberry', 'Whitmire', 'Prosperity'],
-    ['Richland County']: ['Columbia', 'Blythewood', 'Arcadia Lakes', 'Eastover', 'Forest Acres', 'Dentsville', 'Woodfield', 'Irmo'],
+    ['Richland County']: ['Ballentine', 'Columbia', 'Blythewood', 'Arcadia Lakes', 'Eastover', 'Forest Acres', 'Dentsville', 'Woodfield', 'Irmo'],
     ['Spartanburg County']: ['Spartanburg', 'Boiling Springs', 'Valley Falls', 'Lyman', 'Woodruff', 'Duncan', 'Whitney', 'Saxon', 'Roebuck', 'White Stone', 'Wellford'],
 };
 
