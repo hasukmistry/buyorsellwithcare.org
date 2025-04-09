@@ -20,6 +20,7 @@ const searchMap = {
     Eastover: ['dfc-eastover', 'dfc-richlandc'],
     'West Columbia': ['dfc-wc', 'dfc-lexingtonc'],
     Lexington: ['dfc-lexington', 'dfc-lexingtonc'],
+    Gilbert: ['dfc-gilbert', 'dfc-lexingtonc'],
     'Seven Oaks': ['dfc-so', 'dfc-lexingtonc'],
     'Oak Grove': ['dfc-og', 'dfc-lexingtonc'],
     'Red Bank': ['dfc-rb', 'dfc-lexingtonc'],
