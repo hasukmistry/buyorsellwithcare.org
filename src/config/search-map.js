@@ -27,7 +27,7 @@ const searchMap = {
     'White Knoll': ['dfc-wk', 'dfc-lexingtonc'],
     Chapin: ['dfc-chapin', 'dfc-lexingtonc'],
     Irmo: ['dfc-irmo', 'dfc-lexingtonc'],
-    'Batesburg Leesville': ['dfc-bl', 'dfc-lexingtonc'],
+    'Batesburg-Leesville': ['dfc-bl', 'dfc-lexingtonc'],
     'State Park': ['dfc-sp', 'dfc-richlandc'],
     'White Rock': ['dfc-wr', 'dfc-richlandc'],
     Pelion: ['dfc-pelion', 'dfc-lexingtonc'],
