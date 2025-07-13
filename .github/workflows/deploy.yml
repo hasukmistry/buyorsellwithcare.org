@@ -1,4 +1,6 @@
 name: Deploy new release to GitHub Pages
+permissions:
+  contents: write 
 
 on:
     release:
@@ -38,7 +40,7 @@ jobs:
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
               with:
-                github_token: ${{ secrets.ACCESS_TOKEN }}
+                github_token: ${{ secrets.GITHUB_TOKEN }}
                 publish_dir: ./build
                 publish_branch: gh-pages  # Branch to push to
                 commit_message: Built bundle.js:${{ env.RELEASE_TAG }} to GitHub Pages  # Custom commit message
